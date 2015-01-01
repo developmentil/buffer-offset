@@ -10,7 +10,7 @@
     "buffer",
     "offset",
     "position",
-    "stream"
+    "append"
   ],
   "repositories": [{
      "type": "git", 
