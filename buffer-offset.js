@@ -80,7 +80,7 @@ prot2.append = function(buf, sourceStart, sourceEnd) {
 	var offset = this._offset;
 	this._offset += sourceEnd - sourceStart;
 	
-	buf.copy(this, offset, sourceStart, sourceEnd);
+	buf.copy(this.slice(), offset, sourceStart, sourceEnd);
 	return this;
 };
 
