@@ -36,8 +36,12 @@ exports.convert = function(buffer) {
 
 proto.position = 
 prot2.position = function(offset) {
-	if(offset === undefined)
-		return offset;
+	if(typeof offset !== 'number') {
+		if(!offset)
+			return this._offset;
+
+		throw new Error('Invalid offset type given');
+	}
 	
 	this._offset = offset;
 	return this;
