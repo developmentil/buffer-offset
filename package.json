@@ -1,6 +1,6 @@
 {
   "name": "buffer-offset",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Node.js Buffer wrapper that keeps track of your read and write offsets",
   "main": "buffer-offset.js",
   "scripts": {
